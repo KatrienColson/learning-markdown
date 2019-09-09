@@ -2,10 +2,10 @@
   margin-right: 150px;
   margin-left: 80px;
 }
-.header {
+header {
   color: yellowgreen;
-    border: 1px solid lightgray;
-    margin: 20px;
-    padding: 20px;
-    margin: center;
+  border: 1px solid lightgray;
+  margin: 20px;
+  padding: 100px;
+   
 }
