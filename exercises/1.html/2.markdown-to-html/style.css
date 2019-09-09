@@ -1,0 +1,60 @@
+body {
+    margin-right: 150px;
+    margin-left: 80px;
+}
+span {
+    background-color:#1d1f2015;
+    font-family: Liberation Mono;
+    font-size: 13px;
+    border-radius: 3px;
+}
+#abc {
+    background-color: rgba(246, 248, 250, 0.829);
+}
+table,td,th {
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+    height: 5px;
+    width: 405px;
+    padding: 5px;
+    text-align: left;
+}
+*{
+    font-family: "arial";
+    font-size: 16px;
+    line-height: 1.5;     
+  }
+h1{
+    font-size: 30px;
+    line-height: 1.25;
+    border-bottom: 1px solid lightgray;
+}
+a:visited {
+    color:blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+        color: lightblue;
+        background-color: transparent;
+        text-decoration: underline;
+}
+a:active {
+    color: darkblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.border{
+    background-color: transparent;
+    color: black;
+    border: 1px solid lightgray;
+    margin: 20px;
+    padding: 20px;
+}
+.checkbox{
+    list-style-type: none;
+    padding-left: 2px;
+}  
+    
+    
+
