@@ -79,13 +79,13 @@ tr:nth-child(even) {
   background-color: #4e4848;
 }
 tr:nth-child(even):hover {
-  background-color:#a19a9a;
+  background-color: #a19a9a;
 }
 tr:nth-child(odd) {
   background-color: #a19a9a;
 }
 tr:nth-child(odd):hover {
-  background-color:  #4e4848;
+  background-color: #4e4848;
 }
 td::first-letter{
   font-size: 100%;
@@ -96,7 +96,7 @@ footer{
   height: 150px;
   border: 1px solid orangered;
 }
-footercontainer{
+.footercontainer{
   
 }
 .footer-sociale{
