@@ -2,9 +2,10 @@ body {
   background: url("https://images.pexels.com/photos/417255/pexels-photo-417255.jpeg?cs=srgb&dl=calm-clouds-dawn-417255.jpg&fm=jpg");
   background-size: 202vh 70vw;
   background-repeat: no-repeat;
-  border: 5px solid black;
+  border: 5px solid greenyellow;
   margin: 1px;
   padding: 100px;
+ 
 }
 header {
  }
@@ -15,11 +16,13 @@ header {
   height: 100%;
   flex-direction: column;
 }
+header{
+  
+}
 .header1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
   Margin: 80px;
 }
 .foto:hover {
@@ -28,25 +31,20 @@ header {
 .name {
   position: absolute;
   top: 550px;
-  left: 370px;
+  left: 350px;
   font-size: 50px;
   font-style: italic;
   background-color: greenyellow;
   color: white;
+  padding: 15px;
+
 }
 h2{
   color:#242b15;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   font-size: 50px;
-  border: 1px solid black;
-}
-h1{
-  color: #242b15;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-  font-size: 60px;
-  border: 1px solid black;
+  
 }
 span.test2 {
   writing-mode: vertical-rl; 
@@ -58,7 +56,6 @@ span.test2 {
 img{
   border-radius: 50%;
   display: flex;
-  border: 1px solid black;
   width: 400px;
   height: auto;
   transform: rotate(90deg);
@@ -66,9 +63,10 @@ img{
 }
 .table {
   font-family: arial, sans-serif;
-  border-collapse: collapse;
-  padding: 200px;
-  border: 1px solid yellow;
+  border-collapse: separate;
+  padding: 150px;
+ 
+ 
 }
 td, th {
   border: 1px solid #dddddd;
@@ -94,11 +92,18 @@ td::first-letter{
 }
 footer{
   height: 150px;
-  border: 1px solid orangered;
-}
-.footercontainer{
   
 }
-.footer-sociale{
-  font-size: 1.33333rem;
+.footercontainer{
+ text-align: center;
+ 
 }
+a:hover {
+  background-color:greenyellow;
+  color: white;
+}
+i:{
+  target-name:new;
+  target-new:tab;
+  }
+
