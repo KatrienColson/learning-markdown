@@ -40,19 +40,17 @@ img {
 .number-3 {
   color: red;
 }
-/* .schaduw {
+.schaduw {
   background-color:darkgrey;
   box-shadow: 5px 5px grey;
-} */
-/* .schaduw:hover {
+}
+.schaduw:hover {
   background-color:greenyellow;
   color: white;
-} */
+}
 .move {
-  visibility: hidden;
+    opacity: 0;
 }
 .move:hover {
   opacity: 1.0;
-  background-color:darkgray;
-  padding: 8px 20px;
-}
+ }
