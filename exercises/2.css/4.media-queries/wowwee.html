@@ -10,18 +10,19 @@
 
         .flex-box1{
             background-color: orangered;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            height: 100px;
         }
 @media screen and (min-width: 768px)  /*medium*/
     {
         
         .flex-box1{
-            display: flex;
             background-color: blue;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-            justify-content: center;
-            align-content: center;
             height: 150px;   
         }
         .kind{
@@ -50,7 +51,7 @@
  }
         .flex-box1 .block-text{
             flex-wrap: wrap;
-            background-color:#2b2b2c;
+            
             margin: 10px;
             padding: 20px;
             font-size: 20px;
