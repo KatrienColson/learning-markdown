@@ -7,7 +7,7 @@
     <title>media-queries</title>
     <style>
         /*begin header*/
-@media screen and (min-width: 768px) and (max-width: 1200px)  /*medium*/
+@media screen and (min-width: 768px)  /*medium*/
     {
 
         .flex-box1{
@@ -121,11 +121,12 @@
          }
          .products{
             display: flex;
+            flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-between;
 
          }
-         .products div {
+         .products div{
             border:  2px #CCC solid;
             padding: 10px;
             flex-basis: 30%;
@@ -211,26 +212,26 @@
             margin-left: 40px;
             margin-bottom: 0px;
             margin-top: 100px;
-       }
+        }
        .uitleg{
             color: white;
             font-size: 20px;
             margin-left: 40px;
-       }
+        }
        /* begin midden 3 */
        .container-5-box{
         display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             background-color: blue;
-       }
+        }
       
          .spel{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             height: 60px; 
-         }
+        }
 
          .spel div {
             border:  2px #CCC solid;
@@ -239,7 +240,7 @@
             text-align: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 18px;  
-         }
+        }
 
          .button-1{
             background-color: white;
@@ -248,7 +249,7 @@
             border: 2px solid;
             border-radius: 25px;
             width: 160px;
-         }
+        }
         .button-1:hover{
             background: blue;
             color: white;
@@ -262,20 +263,23 @@
 <!-- begin header -->
 <body>
     <div class="flex-box1">
+    
         <div class="block-logo">
             <img src="resources/logowhite-2.svg" style= "width: 200px; height: 100px;">
         </div>
-        <div class="block-text">
+         <div class="block-Menu">
+            <div class="block-text">
             <div>Products </div>
-        </div>
-        <div class="block-text">
+            </div>
+            <div class="block-text">
             <div>About </div>
-        </div>
-        <div class="block-text">
+            </div>
+             <div class="block-text">
             <div>News </div>
-        </div>
-        <div class="block-text">
+            </div>
+            <div class="block-text">
             <div>Store </div>
+            </div>
         </div>
         <div class="block-search">  
             
