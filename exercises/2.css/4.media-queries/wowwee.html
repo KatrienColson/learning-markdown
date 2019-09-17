@@ -6,101 +6,404 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>media-queries</title>
     <style>
+        /*begin header*/
+    @media screen and (min-width: 320px){
         .flex-box1{
             display: flex;
-            background-color: DodgerBlue;
+            background-color: #2b2b2c;
             flex-direction: row;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             width: 100%;
             height: 200px;
             justify-content: center;
             align-content: center;
             line-height: 150px;
+            height: 500px;   
         }
+        .kind{
+            display: flex;
+            /* height: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;  
+            width: 100px; */
+        }
+    } 
         .flex-box1 > div{
-            background-color: beige;
+            flex-wrap: wrap;
+            background-color:#2b2b2c;
             margin: 10px;
             padding: 20px;
-            font-size: 24px;
-            
+            font-size: 20px;
         }
+        
         .block-logo{
-            float: left;
-            width: auto;
-            border: 1px solid black;
-            padding: 10px;
-            box-sizing: border-box;
-            align-items: center;
             display: flex;
+            flex: 1;
+            align-items: center;
+
+         
         }
         .block-text{
             float: left;
             width: auto;
-            border: 1px solid black;
+            border: 1px solid#2b2b2c;
             padding: 10px;
             box-sizing: border-box;
             align-items: center;
             display: flex;
             justify-content: space-between;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            flex: 0.5;
+            color: white;
+           
+        }
+        .block-text:hover{
+            color: blue;
         }
         .block-search{
-            float: left;
+            /* background-image: url("resources/searchbalk.svg")
             width: auto;
-            border: 1px solid black;
+            border: 1px solid blue;
             padding: 10px;
-            box-sizing: border-box;/*zorgt dat de " kolomen naast elkaar komen*/
             align-items: center;
-            display: flex;
-        }
-        .block-img{
-            float: left;
-            width: auto;
-            border: 1px solid black;
-            padding: 10px;
-            box-sizing: border-box;/*zorgt dat de " kolomen naast elkaar komen*/
-            align-items: center;
-            display: flex;
+            display: flex; */
         }
 
+        input[type=text], select {
+            width: 150px;
+            height: 40px;;
+            display: inline-block;
+            border: 3px solid white;
+            background-color: #2b2b2c;
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+        .navbar-img{
+            float: left;
+            width: auto;
+            border: 1px solid #2b2b2c;
+            padding: 10px;
+            box-sizing: border-box;/*zorgt dat de " kolomen naast elkaar komen*/
+            align-content: center;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+
+/*begin midden*/
+
+
+        .middel{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            background-color: blue;
+        }
+        h1{
+             
+            background-size: cover;
+            text-align: center;
+            color: blue;
+            text-shadow: 5px 10px 5PX grey;
+            font-size: 90px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         }
+         .products{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+         }
+         .products div {
+            border:  2px #CCC solid;
+            padding: 10px;
+            flex-basis: 30%;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+         }
+         .button-1{
+            background-color: white;
+            color: blue;
+            padding: 10px 15px;
+            border: 2px solid;
+            border-radius: 25px;
+            width: 160px;
+         }
+        .button-1:hover{
+            background: blue;
+            color: white;
+        }
+
+        .container-box-3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-box-3 div{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border: 2px #ccc solid;
+            padding: 10px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            flex-basis: 100%;
+        }
+
+        .button-2{
+            background-color: blue;
+            color: white;
+            padding: 10px 15px;    
+            border: 2px solid;
+            border-radius: 25px;
+            width: 160px;        
+        }
+        .button-2:hover{
+            background-color: white;
+            color: blue;
+        }
+
+        .tech{
+            background-color: #2b2b2c;
+            padding-top: 100px;
+            padding-bottom: 35px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items:flex-start;
+        }
+
+        .container-4-box{
+           
+
+        }
+
+        h2{
+            text-align: center;
+            color: blue;
+            font-size: 90px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: 0px;
+        }  
+
+        p{
+            margin: 0px 0px;
+            margin-left: 40px;
+            text-align: left;
+        }
+       h3{
+            color: white;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-left: 40px;
+            margin-bottom: 0px;
+            margin-top: 100px;
+       }
+       .uitleg{
+            color: white;
+            font-size: 20px;
+            margin-left: 40px;
+          
+       }
+      
+       
+
+
+       /* begin midden 3 */
+       .container-5-box{
+        display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            background-color: blue;
+
+       }
+      
+         .spel{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 60px;
+            
+         }
+         .spel div {
+            border:  2px #CCC solid;
+            padding: 10px;
+            flex-basis: 20em;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 18px;
+            
+           
+            
+         }
+         .button-1{
+            background-color: white;
+            color: blue;
+            padding: 10px 15px;
+            border: 2px solid;
+            border-radius: 25px;
+            width: 160px;
+         }
+        .button-1:hover{
+            background: blue;
+            color: white;
+        }
+      
         
     </style>
 </head>
 
 
-
+<!-- begin header -->
 <body>
     <div class="flex-box1">
         <div class="block-logo">
-            <div>logo</div>
+            <img src="resources/logowhite-2.svg" style= "width: 200px; height: 100px;">
         </div>
         <div class="block-text">
             <div>Products </div>
+        </div>
+        <div class="block-text">
             <div>About </div>
+        </div>
+        <div class="block-text">
             <div>News </div>
+        </div>
+        <div class="block-text">
             <div>Store </div>
-        </div> 
+        </div>
         <div class="block-search">  
-            <div><input type="search" name="term" placeholder="Search WowWee Products" class="navigation-bar__search-form__input navigation-bar__search-form__input--no-instagram"></div>
-        </div>   
+            
+               
+                <label></label>
+                <input type="text" name= "zoek">
+          
+        </div>
+
+
+
         <div class="block-img">
             <div class="navbar-img"><img src="resources/icon.facebook.png"></div>
+
             <div class="navbar-img"><img src="resources/icon.twitter.png"></div>
+
             <div class="navbar-img"><img src="resources/icon.youtube.png"></div>
+
             <div class="navbar-img"><img src="resources/icon.instagram.png"></div>
        </div>
-    </div>
-<div class="header">
    
-</div>
+    </div>
+        <div class="kind"> <img src= "resources/kindmetbabyshark.jpg" style= "width: 100%; height: 500px;"></div>
+
+
+
+        <!-- begin midden 1-->
+
+
 
 <div class="middle">
+        <img src= "resources/line.heading.left.png" style= "width: 100%; height: 10px;">
+    <h1>PRODUCT CATEGORIES</h1>
+
+    <div class="products">
+
+        <div class="container-2-box">
+                <img src="resources/aap.png">
+        <div>Fingerlings</div>
+        <br>
+        <input class= "button-1" type="submit" value="FIND OUT MORE" name= " ">
+        </div>
+        <div class="container-2-box">
+            <img src="resources/dino.png">
+        <div>Untamed</div>
+        <br>
+        <input class= "button-1" type="submit" value="FIND OUT MORE" name= " ">
+        </div>
+        <div class="container-2-box">
+            <img src="resources/plush.png">
+        <div>+More</div>
+        <br>
+        <input class= "button-1" type="submit" value="FIND OUT MORE" name= " ">
+        </div>
+    </div>
+    
+    <div class="container-box-3">
+        <div>VIEW ALL CATEGORIES</div>
+        <input class= "button-2" type="submit" value="FIND OUT MORE" name= " ">
+        <br>
+        <br>
+        </div>
+    </div>
+   
+
+
+  <!-- begin midden 2-->
+
+    <div class="tech">
+            <div class="container-4-box">
+               
+                <h3>WOWWEE LABS</h3>
+                <h2><p>Bringing</p><p> Tech to Toys</p></h2>
+
+                <p class="uitleg">Explore our history including technology innovations and product launch</p>
+                <p class="uitleg"> highlights dating back to the original Robosapien. Learn more about how</p>
+                <p class="uitleg">we innovate and view concept sketches and prototypes for some of our</p> 
+                <p class="uitleg">latest products. Access our free SDKs to develop your own apps to control</p>
+                <p class="uitleg"> our products. </p>
+                   <br>
+                <!-- <input class= "button-1" type="submit" value="FIND OUT MORE" name= " ">
+                </div> -->
+            </div> 
+
+            <div class="container-4-box">
+                    <img src="resources/robot.png">
+                   
+            </div>
+
+    </div>
+
+<!-- begin midden 3-->
+
+
+<h1>FEATURED PRODUCTS</h1>
+
+<div class="spel">
+
+    <div class="container-5-box">
+            <img src="resources/tijgers.png"style= "width: 250px; height: 250px;">
+    <div>Playing with your cub is like having a real baby animal to take care of and nurture. Alive Cubs react with baby animal sounds and facial animations when you stroke his head or cradle him in your arms.</div>
+    <br>
+    <!-- <input class= "button-1" type="submit" value="FIND OUT MORE" name= " "> -->
+    </div>
+    <div class="container-5-box">
+        <img src="resources/wtsproduct.png" style= "width: 250px; height: 250px;">
+    <div>Coming August 2018: The Party Game That Stinks!
+            What’s That Smell?™ is the hilariously fragrant new scratch 'n sniff guessing game that throws your sense of smell into overdrive!</div>
+    <br>
+    <!-- <input class= "button-1" type="submit" value="FIND OUT MORE" name= " "> -->
+    </div>
+    <div class="container-5-box">
+        <img src="resources/narwal.png" style= "width: 250px; height: 250px">
+    <div>Meet the famous Shark Family singing plush dolls, cubes, and dancing doll. You won't be able to cuddle them enough! Have fun stacking the song cubes, cuddling with your favorite song doll, or dancing with the Baby Shark Dancing Doll to the hit Baby Shark song! </div>
+    <br>
+    <!-- <input class= "button-1" type="submit" value="FIND OUT MORE" name= " "> -->
+    </div>
 
 </div>
 
+
+
+
+
+</div>  <!-- einde van alle midden -->
 <div class="footer">
 
 </div>
-    
+<div style="margin-top:500px;"></div> 
 </body>
 </html>
