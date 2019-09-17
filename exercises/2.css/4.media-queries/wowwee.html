@@ -18,6 +18,11 @@
             flex-wrap: wrap;
             height: 100px;
         }
+        .block-menu{
+            display: flex;
+        
+            
+        }
 @media screen and (min-width: 768px)  /*medium*/
     {
         
@@ -44,14 +49,12 @@
              background-color: green;
         }  
     .block-img{
-            display: block;
-            
+            display: block;  
         }   
                
  }
         .flex-box1 .block-text{
             flex-wrap: wrap;
-            
             margin: 10px;
             padding: 20px;
             font-size: 20px;
@@ -61,13 +64,11 @@
             display: flex;
             flex: 1;
             align-items: center;
-
-         
         }
+
         .block-text{
             float: left;
             width: auto;
-            
             padding: 10px;
             box-sizing: border-box;
             align-items: center;
@@ -82,23 +83,15 @@
             color: blue;
         }
         .block-search{
-            /* background-image: url("resources/searchbalk.svg")
-            width: auto;
-            border: 1px solid blue;
-            padding: 10px;
-            align-items: center;
-            display: flex; */
-        }
-
-        input[type=text], select {
             width: 150px;
             height: 40px;;
             display: inline-block;
             border: 3px solid white;
-            background-color: #2b2b2c;
+            background-color: transparent;
             border-radius: 25px;
             box-sizing: border-box;
         }
+
         .navbar-img{
             float: left;
             width: auto;
@@ -292,13 +285,13 @@
                 <div>Store </div>
             </div>
         </div>
-        <div class="block-search">  
+        
             
                
                 <label></label>
-                <input type="text" name= "zoek">
+                <input class="block-search" type="text" name= "zoek">
           
-        </div>
+        
 
 
 
