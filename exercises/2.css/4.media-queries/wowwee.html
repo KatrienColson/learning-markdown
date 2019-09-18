@@ -7,7 +7,11 @@
     <title>media-queries</title>
     <style>
         /*begin header*/
-
+body{
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
         .flex-box1{
             background-color: orangered;
             display: flex;
@@ -17,6 +21,9 @@
             align-content: center;
             flex-wrap: wrap;
             height: 100px;
+            /* position: fixed; */
+            padding-top: 5px;
+            
         }
         .block-menu{
             display: flex;        
@@ -128,7 +135,7 @@
 
          }
          .products div{
-            border:  2px #CCC solid;
+            
             padding: 10px;
             flex-basis: 30%;
             text-align: center;
@@ -157,7 +164,7 @@
         .container-box-3 div{
             margin-top: 20px;
             margin-bottom: 10px;
-            border: 2px #ccc solid;
+           
             padding: 10px;
             text-align: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -177,7 +184,7 @@
             background-color: white;
             color: blue;
         }
-
+/*begin midden 2*/
         .tech{
             background-color: #2b2b2c;
             padding-top: 100px;
@@ -221,42 +228,303 @@
         }
        /* begin midden 3 */
        .container-5-box{
-        display: flex;
+            display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            background-color: blue;
+            background-color: white;
+            background-size: 100%;
         }
+
+        
+
+        
       
          .spel{
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            height: 60px; 
+            justify-content: space-evenly;
+            align-content: center;
+            /* height: 60px;  */
+            width: 100%;
         }
 
          .spel div {
-            border:  2px #CCC solid;
+           
             padding: 10px;
-            flex-basis: 20em;
+            flex-basis: 25em;
             text-align: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 18px;  
+            
         }
 
-         .button-1{
+        .spel img{
+           margin-left: auto;
+           margin-right: auto;
+        }
+
+         .button-3{
             background-color: white;
             color: blue;
             padding: 10px 15px;
             border: 2px solid;
             border-radius: 25px;
             width: 160px;
+            margin: 50px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .button-1:hover{
+        .button-3:hover{
             background: blue;
             color: white;
         }
-      
-        
+        h6{
+            color: black;
+            font-size: 35px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           text-align: center;
+           margin-bottom: 0px;
+           padding-bottom: 0;
+
+        }
+
+        .featured{
+            background-size: cover;
+            margin-top: 0px;
+            padding-top: 0;
+            font-size: 90px;
+            color: blue;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 5px 10px 5PX grey;
+        }
+
+
+ 
+
+ /* begin midden 4 */
+     
+       .midden-4{
+            background-size: cover;
+            margin-top: 0px;
+            padding-top: 0;
+            font-size: 90px;
+            color: white;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 5px 10px 5PX grey;
+            background-color: black;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: center;
+            width: 100%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 100px;
+            background-color: red;
+        }
+
+         .box div {
+            border:  2px #CCC solid;
+            padding: 10px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 18px;  
+            
+        }
+
+        .box:nth-of-type(2) {
+  
+            flex-basis: 50px;
+        }
+
+        .box img{
+           margin-left: auto;
+           margin-right: auto;
+        }
+
+        /* .container-6-box{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            background-size: 100%;
+            background-color: green;
+        } */
+
+        .auteur{
+            margin-top: 120px;
+            font-size: 10px;
+            color: lightskyblue;
+        }
+        a {
+            padding: 15px 25px;
+            
+        }
+       
+        /* begin footer*/
+       
+        .footer {
+    background: #181818;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#footernews {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+#footerlinks {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+@media only screen and (min-width: 768px) {
+    #footernews {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    #footerlinks {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
+
+#footernews {
+    padding: 25px 20px;
+    background: #212121;
+}
+
+@media only screen and (min-width: 768px) {
+    #footernews {
+        padding: 40px 25px;
+        background: none;
+    }
+}
+
+
+#footernews {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto 200px;
+    align-items: stretch;
+}
+
+#footertext {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+#footerinput {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#footerbutton {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#footercheck {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+
+#footernews h3 {
+    color: #3babe4;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#footernews p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+#footerinput input {
+    padding: 15px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #4d4d4d;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+#footerinput input::placeholder {
+    color: white;
+}
+
+
+#footerlinks {
+    padding: 40px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    #footerlinks {
+        padding: 40px 25px;
+    }
+}
+
+
+#footerlinks {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+#footerlinkslogo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#footerlinksbutton {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+}
+
+#footerlinksnav {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+#footerlinkscopy {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+
+#footerlinkslogo img {
+    width: 100px;
+    height: auto;
+}
+
+#footerlinksnav {
+    margin: 25px 0 0 0;
+}
+
+#footerlinkscopy {
+    color: #c0c0c0;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    #footerlinkslogo img {
+        width: 200px;
+    }
+}
+
+
     </style>
 </head>
 
@@ -358,54 +626,163 @@
                 <p class="uitleg">latest products. Access our free SDKs to develop your own apps to control</p>
                 <p class="uitleg"> our products. </p>
                    <br>
-                <!-- <input class= "button-1" type="submit" value="FIND OUT MORE" name= " ">
-                </div> -->
+                <input class= "button-1" type="submit" value="FIND OUT MORE" name= " ">
             </div> 
 
             <div class="container-4-box">
-                    <img src="resources/robot.png">
-                   
+                    <img src="resources/robot.png">   
             </div>
-
     </div>
 
 <!-- begin midden 3-->
 
-
-<h1>FEATURED PRODUCTS</h1>
-
+  <h6>THE LATEST & GREATEST</h6>
+  <div class="featured">
+        FEATURED PRODUCTS
+</div>
 <div class="spel">
 
     <div class="container-5-box">
-            <img src="resources/tijgers.png"style= "width: 250px; height: 250px;">
-    <div>Playing with your cub is like having a real baby animal to take care of and nurture. Alive Cubs react with baby animal sounds and facial animations when you stroke his head or cradle him in your arms.</div>
+            <img src="resources/babysharkplush.png" style= "width: 246.91px; height: 200px;">
+            <img src="resources/babysharklogo.png" style="width: 252.83px; height: 50px;">
+         <div>Meet the famous Shark Family singing plush dolls, cubes, and dancing doll. You won't be able to cuddle them enough...
+         </div>
     <br>
-    <!-- <input class= "button-1" type="submit" value="FIND OUT MORE" name= " "> -->
-    </div>
-    <div class="container-5-box">
-        <img src="resources/wtsproduct.png" style= "width: 250px; height: 250px;">
-    <div>Coming August 2018: The Party Game That Stinks!
-            What’s That Smell?™ is the hilariously fragrant new scratch 'n sniff guessing game that throws your sense of smell into overdrive!</div>
-    <br>
-    <!-- <input class= "button-1" type="submit" value="FIND OUT MORE" name= " "> -->
-    </div>
-    <div class="container-5-box">
-        <img src="resources/narwal.png" style= "width: 250px; height: 250px">
-    <div>Meet the famous Shark Family singing plush dolls, cubes, and dancing doll. You won't be able to cuddle them enough! Have fun stacking the song cubes, cuddling with your favorite song doll, or dancing with the Baby Shark Dancing Doll to the hit Baby Shark song! </div>
-    <br>
-    <!-- <input class= "button-1" type="submit" value="FIND OUT MORE" name= " "> -->
+         <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
     </div>
 
+    <div class="container-5-box">
+            <img src="resources/tijgers.png"style= "width: 250px; height: 200px;">
+            <img src="resources/alive.png" style="width: 252.83px; height: 50px;">
+        <div>Playing with your cub is like having a real baby animal to take care of and nurture. Alive Cubs react with baby... 
+        </div>
+    <br>
+         <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
+    </div>
+
+    <div class="container-5-box">
+        <img src="resources/wtsproduct.png" style= "width: 245.98px; height: 200px;">
+        <img src="resources/wtslogo.png" style="width: 252.83px; height: 50px;">
+        <div>Coming August 2018: The Party Game That Stinks!
+        What’s That Smell?™ is the hilariously fragrant new scratch 'n sniff guessing game that throws your sense of smell...
+        </div>
+    <br>
+        <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
+    </div>
+    
+    
+    
 </div>
 
 
+<!-- begin midden 4-->
+
+<div class="midden-4">
+        NEWS
+</div>
+<div class="box">
+
+    <div class="container-6-box">
+            <img src="resources/gelukskoekje.png" style= "width: 100%;">
+           
+         <div>Kids these days get all the luck. (Literally.)
+              Kids these days get all the luck. (Literally.) Lucky Fortune Bracelets From WowWee Are The Sweetest Surprise Accessory. 
+         </div>
+    
+         <a href="https://wowwee.com/news/in-the-news/kids-these-days-get-all-the-luck-literally">READ MORE</a> 
+                  
+    </div>
+
+    <div class="container-6-box">
+            <img src="resources/narwal-wit.jpg"style= "width: 100%">
+           
+        <div>FINGERLINGS NARWHALS COVERED BY PARENTS.COM
+              The new Fingerlings Narwhal is the latest toy that will make you fall in love!
+        </div>
+    
+        <a href="https://wowwee.com/news/in-the-news/fingerlings-narwhals-covered-by-parentscom">READ MORE</a> 
+                  
+    </div>
+
+    
+    
+    
+    
+</div>
+        
+     </div> <!--einde div class "news-container" -->
 
 
 
-</div>  <!-- einde van alle midden -->
-<div class="footer">
+
+
+
+
+
+
+
+
+
+
+</div>  <!--einde van alle midden -->
+<footer class="footer">
+
+    <div id="footernews" class="footeritem">
+
+        <div id="footertext" class="footeritem">
+            <h3>Want WowWee updates and offers?</h3>
+            <p>We'll send you WowWee news, product announcements and special offers.</p>
+        </div>
+
+        <div id="footerinput" class="footeritem">
+            <input type="text" name="email-newsletter" placeholder="Your email adress">
+        </div>
+
+        <div id="footerbutton" class="footeritem">
+            <input class="button btnColor2" type="button" value="sign up">
+        </div>
+
+        <div id="footercheck" class="footeritem">
+            <input type="checkbox" name="checknewsletter">
+            <span>I am over 13 years old</span>
+        </div>
+    </div>
+    <!-- footer--newsletter -->
+
+    <div id="footerlinks" class="footer-item">
+
+        <div id="footerlinkslogo" class="footerlinksitem">
+            <a href="index.html"><img src="resources/logogrey.png" alt="logo"></a>
+        </div>
+
+        <div id="footerlinksbutton" class="footerlinksitem">
+            <button class="button btnColor3">Where to buy</button>
+        </div>
+
+        <div id="footerlinksnav" class="footerlinksitem">
+            <nav class="nav">
+                <ul>
+                    <li>Contact</li>
+                    <li>Support</li>
+                    <li>Warranty</li>
+                    <li>Privacy</li>
+                    <li>Legal</li>
+                    <li>Careers</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="footerlinkscopy" class="footerlinksitem">
+            <p class="copyright">© 2019 WowWee Group Limited. All Rights Reserved.</p>
+        </div>
+
+    </div>
+        
 
 </div>
-<div style="margin-top:500px;"></div> 
+
+    
+
+
 </body>
 </html>
