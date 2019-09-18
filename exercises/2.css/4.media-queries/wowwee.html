@@ -195,11 +195,6 @@ body{
             align-items:flex-start;
         }
 
-        .container-4-box{
-           
-
-        }
-
         h2{
             text-align: center;
             color: blue;
@@ -226,6 +221,20 @@ body{
             font-size: 20px;
             margin-left: 40px;
         }
+        .button-4{
+            background-color: white;
+            color: blue;
+            padding: 10px 15px;
+            border: 2px solid;
+            border-radius: 25px;
+            width: 160px;
+            margin-left: 35px;
+         }
+        .button-4:hover{
+            background: blue;
+            color: white;
+        }
+
        /* begin midden 3 */
        .container-5-box{
             display: flex;
@@ -233,19 +242,16 @@ body{
             flex-direction: row;
             background-color: white;
             background-size: 100%;
+            
         }
-
-        
-
-        
-      
-         .spel{
+        .spel{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             align-content: center;
-            /* height: 60px;  */
             width: 100%;
+            padding-top: 50px;
+            
         }
 
          .spel div {
@@ -254,13 +260,15 @@ body{
             flex-basis: 25em;
             text-align: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size: 18px;  
-            
+            font-size: 18px; 
+           
         }
 
         .spel img{
            margin-left: auto;
            margin-right: auto;
+           padding-bottom: 30px; 
+           
         }
 
          .button-3{
@@ -280,12 +288,11 @@ body{
         }
         h6{
             color: black;
-            font-size: 35px;
+            font-size: 20px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-           text-align: center;
-           margin-bottom: 0px;
-           padding-bottom: 0;
-
+            text-align: center;
+            margin-bottom: 0px;
+            padding-bottom: 0;
         }
 
         .featured{
@@ -315,64 +322,56 @@ body{
             text-shadow: 5px 10px 5PX grey;
             background-color: black;
         }
+
         .box{
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
-            align-content: center;
-            width: 100%;
-            flex-grow: 0;
-            flex-shrink: 0;
-            flex-basis: 100px;
-            background-color: red;
+            background-color: black;
+            align-items: center;
+            padding: 20px;
         }
-
-         .box div {
-            border:  2px #CCC solid;
-            padding: 10px;
-            text-align: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size: 18px;  
-            
-        }
-
-        .box:nth-of-type(2) {
-  
-            flex-basis: 50px;
-        }
-
-        .box img{
-           margin-left: auto;
-           margin-right: auto;
-        }
-
-        /* .container-6-box{
+        .container-6-box{
+            margin-left: 3%;
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            background-size: 100%;
-            background-color: green;
-        } */
+            flex-direction: column;
+            width: 100%;
+            background-color: white; 
+            height: 749px;
+            flex-basis: 70%;
+        }
+        
+        .newspic1{
+            display: flex;
+            width: 100%;
+        }
+        .newspic1 img{
+            width: 100%;
+        }
 
+        .container-6-box:nth-of-type(1) {
+            flex-shrink: 0;
+            margin-left: 0%;
+        }
+       
         .auteur{
             margin-top: 120px;
             font-size: 10px;
             color: lightskyblue;
         }
+
         a {
             padding: 15px 25px;
-            
-        }
+        } 
        
         /* begin footer*/
        
-        .footer {
+    .footer {
     background: #181818;
     color: #ffffff;
     font-size: 12px;
 }
 
-.footer {
+    .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -626,7 +625,7 @@ body{
                 <p class="uitleg">latest products. Access our free SDKs to develop your own apps to control</p>
                 <p class="uitleg"> our products. </p>
                    <br>
-                <input class= "button-1" type="submit" value="FIND OUT MORE" name= " ">
+                <input class= "button-4" type="submit" value="FIND OUT MORE" name= " ">
             </div> 
 
             <div class="container-4-box">
@@ -647,7 +646,7 @@ body{
             <img src="resources/babysharklogo.png" style="width: 252.83px; height: 50px;">
          <div>Meet the famous Shark Family singing plush dolls, cubes, and dancing doll. You won't be able to cuddle them enough...
          </div>
-    <br>
+    
          <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
     </div>
 
@@ -656,7 +655,7 @@ body{
             <img src="resources/alive.png" style="width: 252.83px; height: 50px;">
         <div>Playing with your cub is like having a real baby animal to take care of and nurture. Alive Cubs react with baby... 
         </div>
-    <br>
+    
          <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
     </div>
 
@@ -666,7 +665,7 @@ body{
         <div>Coming August 2018: The Party Game That Stinks!
         What’s That Smell?™ is the hilariously fragrant new scratch 'n sniff guessing game that throws your sense of smell...
         </div>
-    <br>
+    
         <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
     </div>
     
@@ -682,9 +681,10 @@ body{
 </div>
 <div class="box">
 
-    <div class="container-6-box">
-            <img src="resources/gelukskoekje.png" style= "width: 100%;">
-           
+    <div class="container-6-box" class="bigcontainer">
+        <div class="newspic1">   
+            <img src="resources/gelukskoekje.png">
+        </div>   
          <div>Kids these days get all the luck. (Literally.)
               Kids these days get all the luck. (Literally.) Lucky Fortune Bracelets From WowWee Are The Sweetest Surprise Accessory. 
          </div>
@@ -693,9 +693,10 @@ body{
                   
     </div>
 
-    <div class="container-6-box">
-            <img src="resources/narwal-wit.jpg"style= "width: 100%">
-           
+    <div class="container-6-box" class="smallcontainer">
+        <div class="newspic1">
+            <img src="resources/narwal-wit.jpg">
+        </div>
         <div>FINGERLINGS NARWHALS COVERED BY PARENTS.COM
               The new Fingerlings Narwhal is the latest toy that will make you fall in love!
         </div>
