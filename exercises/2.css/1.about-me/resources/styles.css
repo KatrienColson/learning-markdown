@@ -109,6 +109,7 @@ footer {
 }
 .footercontainer {
  text-align: center;
+ list-style: none;
 }
 a:hover {
   background-color:greenyellow;
