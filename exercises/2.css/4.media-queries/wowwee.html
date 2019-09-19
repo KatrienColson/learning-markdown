@@ -9,9 +9,76 @@
         /*begin header*/
 body{
     margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    
+    background-image: url("resources/kindmetbabyshark.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
 }
+
+.container-0{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.button-8{
+    color: black;
+    background-color: #00F2CD;
+    padding: 10px 15px;
+    border: 2px solid;
+    border-radius: 25px;
+    width: 160px;
+    border-color:  #00F2CD;
+   
+}
+
+.container-0 .button-8{
+    position: absolute;
+     top: 350px;
+    left: 145px;
+     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #00F2CD;
+    color: black;
+    font-size:18px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+  
+}
+
+.button-8:hover{
+    background: #33AAE7;
+    color: white;
+}
+
+.babyshark{
+    position: absolute;
+    bottom: 300px;
+    left: 16px;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 10px 15px 2px rgba(0,0,0,.1);
+} 
+
+
+
+
+.babyshark1{
+    position: absolute;
+    bottom: 220px;
+    left: 16px;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 10px 15px 2px rgba(0,0,0,.1);
+} 
+
+
+
+
         .flex-box1{
             background-color: orangered;
             display: flex;
@@ -21,36 +88,39 @@ body{
             align-content: center;
             flex-wrap: wrap;
             height: 100px;
-            /* position: fixed; */
             padding-top: 5px;
             
+            
         }
+
         .block-menu{
             display: flex;        
         }
+
+    }
+
 @media screen and (min-width: 768px)  /*medium*/
     {   
     .flex-box1{
             background-color: blue;
-            height: 150px;   
+            height: 150px;
+            
     }
+
     .kind{
-            display: flex;
-            /* height: 200px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;  
-            width: 100px; */
+            display: flex;        
     }
+
     .block-img{
             display: none;         
     }
  } 
  @media screen and (min-width: 1200px) {   /*large*/
     .flex-box1{
-             background-color: green;
-    }  
+             background-color: #2B2B2C;
+             
+    } 
+
     .block-img{
             display: block;  
     }   
@@ -83,7 +153,7 @@ body{
         }
 
         .block-text:hover{
-            color: blue;
+            color: #33AAE7;
         }
         
         .block-search{
@@ -109,49 +179,59 @@ body{
         }
 
 
-/*begin midden*/
-
-
+/*begin midden-1*/
+        .driehoek {   
+            width: 100%;
+            height: auto;
+            margin-top: -100px;
+            padding-top: 100px;
+            z-index: &;
+          
+            
+   
+   }
         .middel{
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            background-color: blue;
+            background-color: #33AAE7;
         }
+
         h1{
-             
             background-size: cover;
             text-align: center;
-            color: blue;
+            color: #33AAE7;
             text-shadow: 5px 10px 5PX grey;
             font-size: 90px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
          }
+
          .products{
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-between;
-
          }
+
          .products div{
-            
             padding: 10px;
             flex-basis: 30%;
             text-align: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 25px;
          }
+
          .button-1{
             background-color: white;
-            color: blue;
+            color: #33AAE7;
             padding: 10px 15px;
             border: 2px solid;
             border-radius: 25px;
             width: 160px;
          }
+
         .button-1:hover{
-            background: blue;
+            background: #33AAE7;
             color: white;
         }
 
@@ -161,10 +241,10 @@ body{
             justify-content: center;
             align-items: center;
         }
+
         .container-box-3 div{
             margin-top: 20px;
             margin-bottom: 10px;
-           
             padding: 10px;
             text-align: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -173,17 +253,19 @@ body{
         }
 
         .button-2{
-            background-color: blue;
+            background-color: #33AAE7;
             color: white;
             padding: 10px 15px;    
             border: 2px solid;
             border-radius: 25px;
             width: 160px;        
         }
+
         .button-2:hover{
             background-color: white;
-            color: blue;
+            color: #33AAE7;
         }
+
 /*begin midden 2*/
         .tech{
             background-color: #2b2b2c;
@@ -193,21 +275,23 @@ body{
             flex-direction: row;
             justify-content: space-between;
             align-items:flex-start;
+            flex-wrap: wrap;
         }
 
         h2{
             text-align: center;
-            color: blue;
+            color: #33AAE7;
             font-size: 90px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             margin-top: 0px;
         }  
 
-        p{
+        p{  
             margin: 0px 0px;
             margin-left: 40px;
             text-align: left;
         }
+
        h3{
             color: white;
             font-size: 20px;
@@ -216,23 +300,27 @@ body{
             margin-bottom: 0px;
             margin-top: 100px;
         }
+
        .uitleg{
             color: white;
             font-size: 20px;
             margin-left: 40px;
         }
+
         .button-4{
-            background-color: white;
-            color: blue;
+            background-color: #2B2B2C;
+            color: #33AAE7;
             padding: 10px 15px;
-            border: 2px solid;
+            border: 1px solid;
             border-radius: 25px;
             width: 160px;
             margin-left: 35px;
          }
+
         .button-4:hover{
-            background: blue;
+            background: #33AAE7;
             color: white;
+            border-color: #33AAE7;
         }
 
        /* begin midden 3 */
@@ -242,8 +330,9 @@ body{
             flex-direction: row;
             background-color: white;
             background-size: 100%;
-            
+           
         }
+        
         .spel{
             display: flex;
             flex-direction: row;
@@ -251,11 +340,10 @@ body{
             align-content: center;
             width: 100%;
             padding-top: 50px;
-            
+         
         }
 
          .spel div {
-           
             padding: 10px;
             flex-basis: 25em;
             text-align: center;
@@ -273,7 +361,7 @@ body{
 
          .button-3{
             background-color: white;
-            color: blue;
+            color: #33AAE7;
             padding: 10px 15px;
             border: 2px solid;
             border-radius: 25px;
@@ -282,12 +370,14 @@ body{
             margin-left: auto;
             margin-right: auto;
         }
+
         .button-3:hover{
-            background: blue;
+            background: #33AAE7;
             color: white;
         }
+
         h6{
-            color: black;
+            color: #2B2B2C;
             font-size: 20px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             text-align: center;
@@ -300,16 +390,14 @@ body{
             margin-top: 0px;
             padding-top: 0;
             font-size: 90px;
-            color: blue;
+            color: #33AAE7;
             text-align: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             text-shadow: 5px 10px 5PX grey;
         }
 
 
- 
-
- /* begin midden 4 */
+ /* begin midden 4 deel 1*/
      
        .midden-4{
             background-size: cover;
@@ -319,31 +407,34 @@ body{
             color: white;
             text-align: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            text-shadow: 5px 10px 5PX grey;
-            background-color: black;
+            background-color: #2B2B2C;
+            flex-wrap: wrap;
         }
 
         .box{
             display: flex;
             flex-direction: row;
-            background-color: black;
+            background-color: #2B2B2C;
             align-items: center;
             padding: 20px;
+            
         }
+        
         .container-6-box{
-            margin-left: 3%;
+            margin-left: 23.3906px;
             display: flex;
             flex-direction: column;
             width: 100%;
             background-color: white; 
             height: 749px;
-            flex-basis: 70%;
+            flex-basis: 65.5%;
         }
         
         .newspic1{
             display: flex;
             width: 100%;
         }
+
         .newspic1 img{
             width: 100%;
         }
@@ -352,23 +443,145 @@ body{
             flex-shrink: 0;
             margin-left: 0%;
         }
-       
+
+       .title-1{
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+       }
+
+       .text-4{
+            font-size: 16px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-left: 20px;
+            margin-right: 50px;
+        }
         .auteur{
-            margin-top: 120px;
-            font-size: 10px;
-            color: lightskyblue;
+            margin-top: 70px;
+            margin-left: 25px;
+            font-size: 15px;
+            color: #33AAE7;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+              
+        .read-more-1{
+            text-align: right;
+            padding-right: 50px;
+            padding-top: 0px;
+            color: grey;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+       
+        a:link{
+            text-decoration: none;
+            color: grey;
         }
 
-        a {
-            padding: 15px 25px;
-        } 
-       
-        /* begin footer*/
+        a:visited{
+            color: grey;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: #33AAE7;
+        }
+
+/* begin midden 4 deel 2*/
+
+
+        .box-7{
+            display: flex;
+            flex-direction: row;
+            background-color: #2B2B2C;
+            align-items: center;
+            padding: 20px;
+            padding-top: 0px;
+            height: 749px;
+        }
+
+        .container-7-box{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: white; 
+            height: 749px;
+            padding-top: 0px;
+        }
+
+        .container-8-box{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: white;
+            height: 749px;
+            margin-left: 23.3906px;
+        }
+
+        .container-9-box{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: white;
+            height: 749px;
+            margin-left: 23.3906px;
+        }
+
+        .newspic-2{
+            display: flex;
+            width: 100%;
+        }
+
+        .newspic-2 img{
+            width: 100%;
+        }
+
+/* begin midden 5*/        
+        .container-10{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #2B2B2C;
+            height: 400px;
+        }
+        
+        .knop{
+            text-align: center;
+            margin: 200px;
+            
+        }
+
+        .knop a{
+            color: white;
+        }
+
+        .button-7{
+            background-color: #2B2B2C;
+            color: white;
+            padding: 10px 15px;
+            border: 2px solid;
+            border-radius: 25px;
+            width: 160px;
+            margin-left: 35px;
+            border-color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         }
+        
+        .button-7:hover{
+            background: white;
+            color:  #33AAE7;
+            border-color: white;
+        }
+
+/* begin footer*/
        
     .footer {
     background: #181818;
     color: #ffffff;
     font-size: 12px;
+    height: 330px;
 }
 
     .footer {
@@ -386,11 +599,13 @@ body{
     grid-row: 2 / 3;
 }
 
+
 @media only screen and (min-width: 768px) {
     #footernews {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
+
     #footerlinks {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -399,7 +614,7 @@ body{
 
 #footernews {
     padding: 25px 20px;
-    background: #212121;
+    background: #2B2B2C;
 }
 
 @media only screen and (min-width: 768px) {
@@ -408,7 +623,6 @@ body{
         background: none;
     }
 }
-
 
 #footernews {
     display: grid;
@@ -437,9 +651,8 @@ body{
     grid-row: 3 / 4;
 }
 
-
 #footernews h3 {
-    color: #3babe4;
+    color: #33AAE7;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -462,7 +675,6 @@ body{
 #footerinput input::placeholder {
     color: white;
 }
-
 
 #footerlinks {
     padding: 40px 20px;
@@ -489,7 +701,7 @@ body{
 #footerlinksbutton {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    justify-self: end;
+    justify-self:left;
 }
 
 #footerlinksnav {
@@ -501,7 +713,6 @@ body{
     grid-column: 1 / -1;
     grid-row: 3 / 4;
 }
-
 
 #footerlinkslogo img {
     width: 100px;
@@ -521,8 +732,71 @@ body{
     #footerlinkslogo img {
         width: 200px;
     }
-}
 
+    p{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li{
+        color: lightgrey;
+        padding-left: 10px;
+        float: left;
+        font-size: 18px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    li:hover{
+        color: #33AAE7;
+    }
+
+    .copyright{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .button-5{
+        
+        background-color: #33AAE7;
+        color: white;
+        padding: 10px 15px;
+        border: 2px solid;
+        border-radius: 25px;
+        width: 160px;
+        border-color: #33AAE7; 
+    }
+
+    .button-5:hover{
+      
+        background: white;
+        color: #33AAE7;
+    }
+
+    .button-6{
+        background-color: #2B2B2C;
+        color: white;
+        padding: 10px 15px;
+        border: 2px solid;
+        border-radius: 25px;
+        width: 160px;
+        border-color:white;
+        font-size: 20px
+    }
+
+    .button-6:hover{
+        background:white;
+        color: #33AAE7;
+    }
+
+    span{
+        font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
 
     </style>
 </head>
@@ -552,10 +826,6 @@ body{
         
                 <input class="block-search" type="text" name= "zoek">
           
-        
-
-
-
         <div class="block-img">
             <div class="navbar-img"><img src="resources/icon.facebook.png"></div>
 
@@ -567,17 +837,24 @@ body{
        </div>
    
     </div>
+
+    <div class="container-0">
         <div class="kind"> <img src= "resources/kindmetbabyshark.jpg" style= "width: 100%;"></div>
-
-
+        <p class="babyshark">BABY SHARK</p>
+        <p class ="babyshark1">SONG PUPPETS</p>
+        <input class= "button-8" type="submit" value="LEARN MORE" name= " ">
+        
+    </div>
 
         <!-- begin midden 1-->
 
 
+     
 
+        <img src="resources/bg.hero-slash.svg" class="driehoek">
 <div class="middle">
-        <img src= "resources/line.heading.left.png" style= "width: 100%; height: 10px;">
-    <h1>PRODUCT CATEGORIES</h1>
+        
+         <h1>PRODUCT CATEGORIES</h1>
 
     <div class="products">
 
@@ -667,65 +944,112 @@ body{
         </div>
     
         <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
-    </div>
-    
-    
-    
+    </div>           
 </div>
 
 
-<!-- begin midden 4-->
+<!-- begin midden 4 deel 1-->
 
-<div class="midden-4">
+    <div class="midden-4">
         NEWS
-</div>
-<div class="box">
+    </div>
+    <div class="box">
 
-    <div class="container-6-box" class="bigcontainer">
-        <div class="newspic1">   
+        <div class="container-6-box" class="bigcontainer">
+            <div class="newspic1">   
             <img src="resources/gelukskoekje.png">
-        </div>   
-         <div>Kids these days get all the luck. (Literally.)
-              Kids these days get all the luck. (Literally.) Lucky Fortune Bracelets From WowWee Are The Sweetest Surprise Accessory. 
-         </div>
-    
-         <a href="https://wowwee.com/news/in-the-news/kids-these-days-get-all-the-luck-literally">READ MORE</a> 
-                  
+            </div>   
+                <div class="title-1">Kids these days get all the luck. (Literally.)
+                </div>
+                    <div class="text-4">Kids these days get all the luck. (Literally.) Lucky Fortune Bracelets From WowWee Are The Sweetest Surprise Accessory. 
+                    </div>
+                <div class="auteur">
+                Jessica Hartshorn on Feb 12 / Parents.com
+                </div>
+                     <div class="read-more-1">
+                        <a href="https://wowwee.com/news/in-the-news/kids-these-days-get-all-the-luck-literally">READ MORE ></a> 
+                    </div> 
     </div>
 
-    <div class="container-6-box" class="smallcontainer">
-        <div class="newspic1">
+        <div class="container-6-box" class="smallcontainer">
+            <div class="newspic1">
             <img src="resources/narwal-wit.jpg">
+            </div>
+                <div class="title-1">FINGERLINGS NARWHALS COVERED BY PARENTS.COM
+                </div> 
+                    <div class="text-4">The new Fingerlings Narwhal is the latest toy that will make you fall in love!
+                    </div>
+                <div class="auteur">
+                Alison Kresta on Apr 10 / Romper
+                </div>
+                    <div class="read-more-1">
+                        <a href="https://wowwee.com/news/in-the-news/fingerlings-narwhals-covered-by-parentscom">READ MORE ></a> 
+                    </div>        
+    </div>
+</div>
+<!-- begin midden 4 deel 2-->
+
+<div class="box-7">
+    <div class="container-7-box" class="smallcontainer">
+        <div class="newspic-2">
+            <img src="resources/handen.jpg">
         </div>
-        <div>FINGERLINGS NARWHALS COVERED BY PARENTS.COM
-              The new Fingerlings Narwhal is the latest toy that will make you fall in love!
+            <div class="title-1">Lucky Fortune covered by Parents
+            </div>
+                <div class="text-4">This Lucky Fortune Toy Is a Must for Astrology-Loving Kids & Moms. Interview with toy creator, Sydney Wiseman.
+                </div>
+                <div class="auteur">
+                Jessica Hartshorn on May 26 / Parents.com
+                </div>
+                        <div class="read-more-1">
+                        <a href="https://wowwee.com/news/in-the-news/lucky-fortune-covered-by-parents">READ MORE ></a> 
+                        </div>        
+    </div>
+    <div class="container-8-box" class="smallcontainer">
+        <div class="newspic-2">
+            <img src="resources/shot1.jpg">
         </div>
-    
-        <a href="https://wowwee.com/news/in-the-news/fingerlings-narwhals-covered-by-parentscom">READ MORE</a> 
-                  
+            <div class="title-1">JustJordan33: Fish Bowl Slime Challenge with Fingerlings Minis
+            </div>
+                <div class="text-4">
+                You don't want to miss Jordan and Audrey from JustJordan33 as they unbox the new Fingerlings Minis! 
+                </div>
+                <div class="auteur">
+                        May 25 / JustJordan33
+                </div>
+                        <div class="read-more-1">
+                        <a href="https://wowwee.com/news/in-the-news/justjordan33-fish-bowl-slime-challenge-with-fingerlings-minis">READ MORE ></a> 
+                        </div>        
+    </div>
+    <div class="container-9-box" class="smallcontainer">
+        <div class="newspic-2">
+            <img src="resources/muts.jpg">
+        </div>
+            <div class="title-1">Princess ToysReview finds Fingerlings Minis in Cupcakes??!!
+            </div>
+            <div class="text-4">
+            Check out Princess ToysReview's Fingerlings Minis themed party featuring cupcake bashing. You don't want to miss it.    
+            </div>
+                <div class="auteur">
+                        May 25 / Princess ToysReview
+                </div>
+                        <div class="read-more-1">
+                        <a href="https://wowwee.com/news/in-the-news/princess-toysreview-finds-fingerlings-minis-in-cupcakes">READ MORE ></a> 
+                        </div>        
+    </div>
+</div>
+<!-- begin midden 5-->
+    <div class="container-10">
+        <div class="knop">
+           <a href="https://www.hln.be/?referer=https%3A%2F%2Fwww.google.com%2F" class="button-7">VIEW ALL NEWS</a>
+        </div>
     </div>
 
-    
-    
-    
-    
-</div>
         
-     </div> <!--einde div class "news-container" -->
-
-
-
-
-
-
-
-
-
-
-
-
+</div> <!--einde div class "news-container" -->
 
 </div>  <!--einde van alle midden -->
+
 <footer class="footer">
 
     <div id="footernews" class="footeritem">
@@ -740,7 +1064,7 @@ body{
         </div>
 
         <div id="footerbutton" class="footeritem">
-            <input class="button btnColor2" type="button" value="sign up">
+            <input class="button-6" type="button" value="sign up">
         </div>
 
         <div id="footercheck" class="footeritem">
@@ -753,11 +1077,11 @@ body{
     <div id="footerlinks" class="footer-item">
 
         <div id="footerlinkslogo" class="footerlinksitem">
-            <a href="index.html"><img src="resources/logogrey.png" alt="logo"></a>
+            <a><img src="resources/logogrey.png" alt="logo"></a>
         </div>
 
         <div id="footerlinksbutton" class="footerlinksitem">
-            <button class="button btnColor3">Where to buy</button>
+            <button class="button-5">Where to buy</button>
         </div>
 
         <div id="footerlinksnav" class="footerlinksitem">
