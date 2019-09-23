@@ -1,0 +1,51 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.last {
+  display: flex;
+  background-color: #d2d6de;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.inventory, .mentions, .downloads, .direct-messages {
+  display: flex;
+  background-color: #d2d6de;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+}
+
+.imag {
+  display: flex;
+  height: 85px;
+  width: 80px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: chartreuse
+}
+
+.inventory-text, .mentions-text, .downloads-text, .direct-messages-text {
+  width: 60%;
+  background-color: purple;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 1px;
+     
+}
+.progress-bar{
+  width: 50%;
+  background: rgba(0,0,0,0.2);
+  margin: 5px -10px 5px -10px;
+  height: 2px;
+ 
+}
+.percentage{
+  text-align: left;
+  
+  
+}
+
+/*# sourceMappingURL=style.css.map */
