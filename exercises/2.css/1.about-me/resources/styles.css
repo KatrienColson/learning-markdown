@@ -1,4 +1,4 @@
-
+/*begin background*/
 .header1 {
   background: url("https://images.pexels.com/photos/417255/pexels-photo-417255.jpeg?cs=srgb&dl=calm-clouds-dawn-417255.jpg&fm=jpg");
   position: relative;
@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   border: 5px solid greenyellow;
 }
+
 .flexbox-1-container{
   display: flex;
   flex-direction: row;
@@ -16,9 +17,7 @@
   height: 100vh;
   justify-content: space-around;
 }
-.agepic {
-  background-color: red;
-}
+/*foto + zoem*/
  .pic {
   display: flex;
   flex-flow: column; 
@@ -41,6 +40,7 @@
 .headshot:hover {
   transform: scale(2);
 }
+/*quote*/
 .flexbox-2-quote {
   width: 400px;
 }
@@ -54,6 +54,7 @@
   height: 100%;
   justify-content: flex-end; 
 }
+/*naam*/
 .name {
   display: flex;
   flex-direction: column;
@@ -77,10 +78,13 @@
   padding: 20px;
   color: white;
 }
+/*begin tabel*/
 .table {
   font-family: arial, sans-serif;
   border-collapse: separate;
-  padding: 150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 150px;
 }
 td, th {
   border: 1px solid #dddddd;
@@ -104,19 +108,24 @@ td::first-letter {
   color: black;
   font-weight: bold;
 }
+/*begin footer*/
 footer {
-  height: 150px;
+  height: 90px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px;
 }
-.footercontainer {
- text-align: center;
- list-style: none;
+li{
+  list-style-type: none;
 }
 a:hover {
   background-color:greenyellow;
   color: white;
 }
-i: {
-  target-name:new;
-  target-new:tab;
+i {
+  width: auto;
+  text-align: center;
 }
 
