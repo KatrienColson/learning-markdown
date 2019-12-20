@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--deze meta is nodig om responsiv te maken-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="discription"><!--Dit is de 2de lijn in google search-->
+  <meta name="keywords"><!--8 tot 12 woorden-->
+  <!--Google gebruikt op dit moment de keyword tag niet voor ranking (wel de news_keyword tag) maar wel om misbruik op te sporen!-->
+  <title>alles HTML</title><!--komt in je tab te staan + 1st lijn op google search-->
+</head>
+<body>
+  <div>
+    <p>Mooie foto"s</p>
+    <a href="https://source.unsplash.com/" target="_blank">mooie gratise foto's</a> 
+  </div>
+  <div>
+    <p>
+      li*4 + tab. geeft een lijst van 4
+    </p>
+    <p>
+      shift + tab. nu kun je alles dat je geselecteerd hebt 1 stap terug zetten.
+    </p>
+    <p>
+      control + D: hier kun je ganse woorden ineens aanduiden
+    </p>
+  </div>
+  <!--list and tables-->
+  <!--list met opsommingstekens en nested-->
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+    <ul>
+      <li>item 10</li>
+      <li>item 12</li>
+    </ul>
+  <li>item 3</li>
+  <li>item 4</li>
+</ul>
+<!--list met nummers-->
+<ol>
+  <li>item 5</li>
+  <li>item 6</li>
+  <li>item 7</li>
+  <li>item 8</li>
+</ol>
+<!--tables-->
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John
+      <td>Smidt</td>
+      <td>john@gmail.com</td>
+      </td>
+    </tr>
+    <tr>
+      <td>katrien</td>
+      <td>Colson</td>
+      <td>katrien@hotmail.com</td>
+    </tr>
+  </tbody>
+</table>
+<!--forms & inputs-->
+<form action=""> <!--hier geef je het adres in van je database-->
+  <!--TEXT-->
+  <div>
+    <label for="name">Name</label><br>
+    <input type="text" id="name" placeholder="Enter yout name"><!--door een id te geven licht je inputveld op-->
+  </div>
+  <br>
+  <!--EMAIL-->
+  <div>
+    <label for="email">Email</label><br>
+    <input type="email" name="email" id="email" placeholder="Enter yout email"><!--hier kun je enkel een email ingeven-->
+  </div>
+  <br>
+  <!--TEXTAREA-->
+  <div>
+    <label for="message">Message</label><br>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+  </div>
+  <br>
+  <!--SELECT-->
+  <div> <!--door selected te zetten kies je welke eerst moet verschijnen-->
+    <label for="gender">Gender</label><br>
+    <select name="gender" id="gender">
+      <option value="male">Male</option>
+      <option value="female" selected>Female</option>
+    </select>
+  </div>
+  <br>
+  <!--NUMBER-->
+  <div>
+    <label for="age">Age</label><br>
+    <input type="number" name="age" id="age">
+  </div>
+  <br>
+  <!--DATE-->
+  <div>
+    <label for="date">Birthday</label><br>
+    <input type="date" name="birthdate" id="birthdate">
+  </div>
+  <br>
+  <!--RADIO BUTTON-->
+  <div><!--door checked te vermelden bij een van deze, geef je aan welke standaard staat aangeduid-->
+    <label for="membership">Membership</label><br>
+    <input type="radio" name="memberschip" value= "simple">Simple
+    <input type="radio" name="memberschip" value= "standerd" checked>Standerd
+    <input type="radio" name="memberschip" value= "super">Super
+  </div>
+  <br>
+  <!--CHECKBOX-->
+  <div>
+    <label for="likes">I like ...</label><br>
+    <input type="checkbox" name="likes" value= "sport">Sport
+    <input type="checkbox" name="likes" value= "game">Games
+    <input type="checkbox" name="likes" value= "nothing">Nothing
+  </div><br>
+  <div>
+  <!--INPUT SUBMIT-->
+    <input type="submit"value="Submit">
+  <!--BUTTON RESET-->
+    <button type="reset">Reset</button>
+
+  </div>
+  <br>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+<div style="margin-top: 200px"></div>
+
+
+</body>
+</html>

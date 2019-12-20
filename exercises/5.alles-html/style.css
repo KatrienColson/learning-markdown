@@ -1,0 +1,93 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*nav bar on the top styling*/
+.box-nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: limegreen;
+  border-radius: 5px;
+  overflow: auto;
+}
+.box-nav li{
+  float: left;
+}
+.box-nav li a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 15px /* 15px aan top en bottum, 15px aan right en left*/
+}
+.box-nav li a:hover{
+  background-color: yellowgreen;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*side menu styling*/
+.box-list{
+  border: 1px solid gray;
+  width: 300px;
+  padding: 20px;
+}
+.box-list li{
+  list-style-type: none;
+  padding: 10px; 
+  border-bottom: 1px solid lightgrey;
+}
+/*hier beschrijf je het laatste element van de list*/
+.box-list li:last-child{
+  border: none;
+}
+.box-list li a{
+  color: green;
+  text-decoration: none;
+}
+.box-list li a:hover{
+  color: yellowgreen;
+}
+/*display: inline and block*/
+.box-inline{
+  background-color: blueviolet;
+}
+.box-inline li{
+  display: inline;
+  
+}
+.box-inline li a{
+  padding-right: 20px;
+  color: yellow;
+}
+img{
+  display: block;
+  margin: auto;
+}
+.box-3{
+  width: 30%;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: lightsteelblue;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+/*verschil tussen display none en visibility hidden*/
+/*display none: verstopt zowel de tekst als de plaats.*/
+/*visibility hidden: verstopt de tekst maar niet de plaats waar het stond*/
+.box-4{
+  border: 2px solid green;
+  margin: 10px;
+  padding: 20px;
+}
+.box-4 h3{
+  display: none;
+}
+.box-5{
+  border: 2px solid red;
+  margin: 10px;
+  padding: 20px;
+}
+.box-5 h3{
+  visibility: hidden;
+}
+
